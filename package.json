@@ -32,6 +32,7 @@
     "start": "react-scripts start",
     "jsonserver1": "json-server --watch Persons.json --port 3466",
     "jsonserver2": "json-server --watch Products.json --port 3477",
+    "json": "concurrently --kill-others \"npm run jsonserver1\" \"npm run jsonserver2\" \"npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

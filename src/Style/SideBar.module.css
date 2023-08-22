@@ -1,62 +1,61 @@
 *{
     margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+}
+main{
+    width:100%;
+    padding: 20px;
 }
 .sidebar {
     height: 100vh;
+    width: 300px;
     background-color: rgba(10, 10, 10, 0.8);
     color: white;
-    position: fixed;
-    transition: all 1s;
-    padding: 20px ;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    height: 100%;
-}
-.sidebar2{
-    color: black;
-    height: 100%;
-    background-color: #ffffff;
-    position:fixed;
-    transition: all 1s;
-    padding: 20px;
-}
-
-.main{
-    text-align: start;
-    margin :0px ;
-}
-
-ul{
-    list-style: none;
-    display: flex ;
-    flex-direction: column;
-}
-
-li{
-    margin-top: 16px;
-    text-align: start;
-    font-size: 22px;
-    display: flex;
     transition: all 0.5s;
-    cursor: pointer;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.bars{
+    font-size: 25px;
+    display: flex;
+   justify-content: center;
+  
+}
+.icons{
+    margin-top: 15px;
 }
 
-li:last-child {
-    margin-top: auto;
+.link{
+    display: flex;
+    color: #fff;
+    padding: 5px 15px;
+    gap: 5px;
+    transform: all 0.5s;
+    -webkit-transform: all 0.5s;
+    -moz-transform: all 0.5s;
+    -ms-transform: all 0.5s;
+    -o-transform: all 0.5s;
+}
+.link:hover{
+    background-color: rgb(187, 178, 178);
+    color: #000;
+    transform: all 0.5s;
+}
+.active{
+    background-color: lightskyblue;
+    color: #000;
+}
+.icon , .linkText{
+    font-size: 20px;
 }
 h2{
     font-size: 22px;
     margin: 5px 0 0 10px;
-}
-.iconS{
-    height: 30px;
-    width: 30px;
-}
-.icon:hover {
-    color: #E2BC97;
 }
 
